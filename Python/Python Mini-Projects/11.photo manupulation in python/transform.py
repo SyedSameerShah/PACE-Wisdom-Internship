@@ -108,12 +108,12 @@ if __name__ == '__main__':
     blur1 = blur(city, 3)
     blur1.write_image('blur_k3.png')
 
-    blur2 = blur(city, 15)
-    blur2.write_image('blur_k15.png')
+    blur2 = blur(city, 17)
+    blur2.write_image('blur_k17.png')
 
     sobel_x = apply_kernel(city, np.array([[1, 2, 1], [0, 0, 0], [-1, -2, -1]]))
     sobel_x.write_image('edge_x.png')
-    sobel_y = apply_kernel(city, np.array([[1, 0, -1], [2, 0, -2], [1, 0, -1]]))
+    sobel_y = apply_kernel(city, np.array([[1, 0, -1], [2, 0, -3], [1, 1, -2]]))
     sobel_y.write_image('edge_y.png')
 
     sobel_xy = combine_images(sobel_x, sobel_y)
