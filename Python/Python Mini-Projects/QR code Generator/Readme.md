@@ -15,22 +15,22 @@ This is a simple QR code generator script written in Python using the `qrcode` l
 - tkinter (usually comes pre-installed with Python)
 
 You can install the qrcode library using below cammond
-'''bash
+```bash
 pip install qrcode
-'''
+```
 
 ## Usage
 
 1. clone this repository, run the following command:
 
-'''bash
+```bash
 git clone https://github.com/SyedSameerShah/PACE-Wisdom-Internship/tree/main/Python/Python%20Mini-Projects/QR%20code%20Generator
-'''
+```
 2. Navigate to the cloned directory:
 3. Run the script main.py:
-'''bash
+```bash
 python main.py
-'''
+```
 
 4. Enter the text or URL for which you want to generate the QR code.
 5. Optionally, add colors for the qrcode.
